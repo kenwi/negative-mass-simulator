@@ -8,10 +8,10 @@ int main()
 {
     Setup darkMatterHalo;
     
-    Simulator simulator;
+	Simulator simulator(darkMatterHalo, 10);
     simulator.run_nbody();
 
-    Export exporter;
+//    Export exporter;
 
     return 0;
 }

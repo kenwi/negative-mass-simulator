@@ -21,9 +21,8 @@ void Setup::initialize_halo_parameters()
     limit = 80000;
     radius = 4;
     num_pos_particles = 5000;
-    num_pos_particles = 45000;
+    num_neg_particles = 45000;
     chunks_value = (num_pos_particles + num_neg_particles) / 5.0f;
-    time_steps = 1000;
 }
 
 void Setup::init_dm_halo()
@@ -59,7 +58,6 @@ void Setup::print_state()
               << "int \tnum_neg_particles: " << num_neg_particles << std::endl
               << "int \tnum_tot_particles: " << num_tot_particles << std::endl
               << "float \tchunks_value: " << chunks_value << std::endl
-              << "int \ttime_steps: " << time_steps << std::endl
               << "float \tm_pos: " << m_neg << std::endl
               << "float \tm_neg: " << m_pos << std::endl
               << "float \ta_scale: " << a_scale << std::endl
